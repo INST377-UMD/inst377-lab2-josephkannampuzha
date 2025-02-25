@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Contact form</title>
+        <style>
+            body{
+                background-color: aqua;
+
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-size: 18px;
+                display: block;
+            }
+
+            input {
+                padding: 8px;
+                width: 100%;
+                max-width: 300px;
+                color: black;
+            }
+
+            .submit-button {
+                background-color: blue;
+                padding: 10px 15px;
+                margin-top: 10px;
+            }
+
+            .submit-button:hover {
+                background-color: crimson;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Contact Me</h1>
+        <form name="ContactForm" method="get" action="Lab2_sumbit_form.html">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </body>
+</html>
